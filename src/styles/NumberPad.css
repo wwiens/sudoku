@@ -1,0 +1,45 @@
+.number-pad {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.number-pad button {
+    padding: 1rem;
+    font-size: 1.25rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.number-pad button:hover {
+    background-color: #f1f5f9;
+}
+
+.number-pad button:active {
+    background-color: #e2e8f0;
+}
+
+.number-pad button.active {
+    background-color: #3b82f6;
+    color: white;
+    border-color: #2563eb;
+}
+
+.number-pad button.completed {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+    border-color: #d1d5db;
+    opacity: 0.6;
+}
+
+.number-pad .delete-btn {
+    grid-column: span 1;
+    color: #ef4444;
+    font-weight: bold;
+}

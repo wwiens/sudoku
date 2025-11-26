@@ -1,0 +1,49 @@
+.cell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s;
+  user-select: none;
+}
+
+.cell:nth-child(3n) {
+  border-right: 2px solid #475569;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.cell.initial {
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.cell.selected {
+  background-color: #bfdbfe;
+}
+
+.cell.highlighted {
+  background-color: #e2e8f0;
+}
+
+.cell.active-number {
+  background-color: #bfdbfe;
+  /* Same as selected, or slightly different */
+  font-weight: bold;
+}
+
+.cell.error {
+  color: #ef4444;
+  background-color: #fee2e2;
+}
+
+.cell:hover:not(.selected) {
+  background-color: #f1f5f9;
+}
